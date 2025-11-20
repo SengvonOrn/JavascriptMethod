@@ -1,0 +1,10 @@
+/ip firewall layer7-protocol
+add comment="Block Torrents" name=block-torrents regexp="^(\\x13bitt\ orrent protocol|azver\\x01\$|get /scrape\\\?info_hash=get /announce\\\?inf\ o_hash=|get /client/bitcomet/|GET /data\\\?fid=)|d1:ad2:id20:|\\x08'7P\\)[\ RP]"
+
+/ip firewall filter
+add action=add-src-to-address-list address-list=Torrent-Conn \ address-list-timeout=2m chain=forward layer7-protocol=\ block-torrents src-address=192.168.1.0/24 src-address-list=\ !allow-bit
+add action=add-src-to-address-list address-list=Torrent-Conn \ address-list-timeout=2m chain=forward p2p=all-p2p src-address=\ 192.168.1.0/24 src-address-list=!allow-bit
+
+/ip firewall filter
+add action=drop chain=forward dst-port=!0-1024,8291,5900,5800,3389,14147,5222,59905 protocol=tcp \ src-address-list=Torrent-Conn
+add action=drop chain=forward dst-port=!0-1024,8291,5900,5800,3389,14147,5222,59905 protocol=udp \ src-address-list=Torrent-Conn
