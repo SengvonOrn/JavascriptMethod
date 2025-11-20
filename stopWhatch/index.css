@@ -1,0 +1,17 @@
+* {
+  font-family: monospace;
+  text-align: center;
+  border-radius: 10%/20%;
+}
+.containner {
+  background: rgb(134, 134, 134);
+  padding: 20px;
+  display: inline-block;
+  color: white;
+}
+button {
+  font-weight: 900;
+  background: yellow;
+  color: black;
+  cursor: pointer;
+}

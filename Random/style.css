@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  position: relative;
+  background: rgb(191, 158, 212);
+  box-shadow: inset 7px 9px 13px 0px #0000006e;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  border-radius: 5px;
+}
+.container > h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 3rem;
+}
+.container .box-number {
+  position: absolute;
+  left: 50px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 15px 0px;
+  background-color: #d6fff3;
+  border-radius: 5px;
+
+  box-shadow: inset 7px 9px 13px 0px #0000006e;
+  width: 200px;
+  height: 50px;
+}
+h2 {
+  font-size: 2rem;
+}
+button {
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(173, 176, 178);
+  border: none;
+  padding: 5px;
+  color: #6550ec;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 90px;
+  cursor: pointer;
+  box-shadow: inset 7px 9px 13px 0px #0000006e;
+}

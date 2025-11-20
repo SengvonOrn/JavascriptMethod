@@ -1,0 +1,16 @@
+label {
+  position: relative;
+  margin: 10px;
+}
+input,
+span {
+  appearance: none;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+span {
+  color: #000;
+  text-indent: 0.18em;
+  top: 0.13em;
+}

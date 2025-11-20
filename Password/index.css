@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: gray;
+}
+#field {
+  width: 400px;
+  height: 40px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+#toggleShow {
+  width: 50px;
+  height: 40px;
+
+  outline: none;
+  font-weight: bold;
+  color: #353434;
+  cursor: pointer;
+  border: none;
+  background: #cdb902eb;
+  border-radius: 0px 5px 5px 0px;
+}

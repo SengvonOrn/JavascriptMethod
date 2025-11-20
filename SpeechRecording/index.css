@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 10px 0px;
+}
+#text {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#btn {
+  background: dodgerblue;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 12px;
+}
+
+#btn_stop {
+  background: dodgerblue;
+  outline: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 12px;
+}
+.container {
+  width: 300px;
+
+  padding: 5px 5px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  overflow-y: scroll;
+  overflow: hidden;
+}

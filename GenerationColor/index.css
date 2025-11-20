@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+:root {
+  --dogerBackground: #1e90ff;
+  --textColor: white;
+}
+.containner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.btn {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  color: var(--textColor);
+  background: var(--dogerBackground);
+  cursor: pointer;
+}
+.btn:hover{
+  box-shadow: 1px 1px 4px 3px rgb(195, 195, 195);
+}

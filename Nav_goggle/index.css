@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Poppins:wght@200;300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --navcolor: #1e90ff;
+  --buttom-line: #545454;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif, "Odor Mean Chey", serif;
+  background: #585858;
+}
+.nav_containner {
+  background: var(--navcolor);
+  display: flex;
+  justify-content: center;
+}
+.nav_contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 90%;
+}
+.nav_images .img {
+  width: 150px;
+}
+.nav_list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+li > a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.toggle {
+  display: none;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 900px) {
+  .nav_contain {
+    flex-wrap: wrap;
+  }
+
+  .toggle {
+    display: flex;
+    cursor: pointer;
+    color: #363636;
+    transition: all 1.5s ease-in-out;
+  }
+
+  .toggle:hover {
+    color: black;
+  }
+
+  .manu_bar {
+    width: 100%;
+    padding-left: 25px;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+
+    height: 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav_list.active {
+    height: 270px;
+    opacity: 1;
+  }
+
+  .line-buttom {
+    border-bottom: 2px solid var(--buttom-line);
+  }
+}
